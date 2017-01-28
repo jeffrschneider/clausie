@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="clausie_lib/jopt-simple-4.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Jeff/Desktop/libraries/jar/protobuf-java-3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Jeff/Desktop/libraries/jar/stanford-corenlp-3.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jeff/Desktop/libraries/jar/stanford-corenlp-3.6.0-models-english.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jeff/Desktop/libraries/jar/stanford-parser-3.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jeff/Desktop/libraries/jar/stanford-parser-3.6.0-models.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Jeff/Desktop/libraries/slf4j-1.7.21/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Jeff/Desktop/libraries/slf4j-1.7.21/slf4j-simple-1.7.21.jar"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>

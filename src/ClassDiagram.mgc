@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="de.mpii.clausie.Clause.Type" x="60" y="162">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="de.mpii.clausie.Constituent.Type" x="483" y="465">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="de.mpii.clausie.PropositionGenerator" x="85" y="11">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="de.mpii.clausie.ClausIE"
+            endpointName="clausIE" kind="Simple"/>
+        <Communication destinationClassName="de.mpii.clausie.TextConstituent"/>
+        <Communication destinationClassName="de.mpii.clausie.IndexedConstituent"/>
+        <Communication destinationClassName="de.mpii.clausie.DpUtils"/>
+    </Class>
+    <Class name="de.mpii.clausie.TextConstituent" x="459" y="734">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="de.mpii.clausie.Constituent"/>
+    </Class>
+    <Class name="de.mpii.clausie.IndexedConstituent" x="93" y="741">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="de.mpii.clausie.Constituent"/>
+        <Communication destinationClassName="de.mpii.clausie.DpUtils"/>
+    </Class>
+    <Class name="de.mpii.clausie.Constituent.Flag" x="882" y="727">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="de.mpii.clausie.ProcessConjunctions" x="711" y="819">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="de.mpii.clausie.IndexedConstituent"/>
+        <Communication destinationClassName="de.mpii.clausie.DpUtils"/>
+    </Class>
+    <Class name="de.mpii.clausie.DefaultPropositionGenerator" x="770" y="37">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="de.mpii.clausie.PropositionGenerator"/>
+    </Class>
+    <Class name="de.mpii.clausie.Dictionary" x="911" y="554">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="de.mpii.clausie.DpUtils" x="724" y="766">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="de.mpii.clausie.ClausIE" x="529" y="162">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="de.mpii.clausie.Proposition"
+            endpointName="propositions" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Clause"
+            endpointName="clauses" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Options"
+            endpointName="options" kind="Simple"/>
+        <Association
+            destinationClassName="de.mpii.clausie.PropositionGenerator"
+            endpointName="propositionGenerator" kind="Simple"/>
+        <Communication destinationClassName="de.mpii.clausie.ProcessConjunctions"/>
+        <Communication destinationClassName="de.mpii.clausie.Clause"/>
+        <Communication destinationClassName="de.mpii.clausie.ClauseDetector"/>
+        <Communication destinationClassName="de.mpii.clausie.XcompConstituent"/>
+        <Communication destinationClassName="de.mpii.clausie.Options"/>
+    </Class>
+    <Class name="de.mpii.clausie.Clause" x="183" y="118">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="de.mpii.clausie.Clause"
+            endpointName="parentClause" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Clause.Type"
+            endpointName="type" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Constituent"
+            endpointName="constituents" kind="Simple"/>
+        <Communication destinationClassName="de.mpii.clausie.IndexedConstituent"/>
+        <Communication destinationClassName="de.mpii.clausie.Dictionary"/>
+        <Communication destinationClassName="de.mpii.clausie.Constituent"/>
+        <Communication destinationClassName="de.mpii.clausie.Options"/>
+    </Class>
+    <Class name="de.mpii.clausie.Proposition" x="659" y="472">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="de.mpii.clausie.ClauseDetector" x="716" y="710">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="de.mpii.clausie.IndexedConstituent"/>
+        <Communication destinationClassName="de.mpii.clausie.ProcessConjunctions"/>
+        <Communication destinationClassName="de.mpii.clausie.Clause"/>
+        <Communication destinationClassName="de.mpii.clausie.DpUtils"/>
+    </Class>
+    <Class name="de.mpii.clausie.Constituent" x="235" y="481">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="de.mpii.clausie.Constituent.Type"
+            endpointName="type" kind="Simple"/>
+    </Class>
+    <Class name="de.mpii.clausie.XcompConstituent" x="19" y="497">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="de.mpii.clausie.IndexedConstituent"/>
+        <Association destinationClassName="de.mpii.clausie.Clause"
+            endpointName="clauses" kind="Simple"/>
+        <Communication destinationClassName="de.mpii.clausie.IndexedConstituent"/>
+    </Class>
+    <Class name="de.mpii.clausie.Options" x="889" y="170">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="de.mpii.clausie.Dictionary"
+            endpointName="dictAdverbsConj" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Dictionary"
+            endpointName="dictAdverbsIgnore" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Dictionary"
+            endpointName="dictAdverbsInclude" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Dictionary"
+            endpointName="dictCopular" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Dictionary"
+            endpointName="dictNotExtCopular" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Dictionary"
+            endpointName="dictExtCopular" kind="Simple"/>
+        <Association destinationClassName="de.mpii.clausie.Dictionary"
+            endpointName="dictComplexTransitive" kind="Simple"/>
+        <Communication destinationClassName="de.mpii.clausie.Dictionary"/>
+    </Class>
+</ClassDiagram>
