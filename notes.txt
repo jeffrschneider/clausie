@@ -1,0 +1,1 @@
+Modifications made to work with Stanford NLP 3.6. 
