@@ -34,7 +34,7 @@ As explained in the respective license codes both Clausie and the Stanford Parse
 ## Citation: 
 
 ```
-@inproceedings{PunyakanokRo01,
+@inproceedings{,
     author = {Luciano Del Corro and Rainer Gemulla},
     title = {ClausIE: Clause-Based Open Information Extraction},
     url = " http://resources.mpi-inf.mpg.de/d5/clausie/clausie-www13.pdf",
