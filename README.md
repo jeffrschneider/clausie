@@ -23,10 +23,21 @@ Contents
 -src/: Clausie source code
 -clausie.jar: A runnable .jar file
 
-LICENSE 
+## License:
 
 * Clausie is distributed under the Attribution-ShareAlike (ver. 3.0 or later) [http://creativecommons.org/licenses/by-sa/3.0/legalcode]
 
 * This distribution requires libraries from the Stanford Parser [http://www-nlp.stanford.edu/software/lex-parser.shtml] which is licensed under the GNU General Public License (v2 or later) [http://www.gnu.org/licenses/gpl-2.0.html]
 
 As explained in the respective license codes both Clausie and the Stanford Parser come with absolutely no warranty.
+
+## Citation: 
+
+```
+@inproceedings{PunyakanokRo01,
+    author = {Luciano Del Corro and Rainer Gemulla},
+    title = {ClausIE: Clause-Based Open Information Extraction},
+    url = " http://resources.mpi-inf.mpg.de/d5/clausie/clausie-www13.pdf",
+    comment = {information extraction, IE, clause},
+}
+```
